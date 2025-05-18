@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+     Travel Expirience
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,20 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-searchbar placeholder="Search your destination" animated="true" mode="ios"
+    style="--background: #eee; --color: #000; border-radius: 20px; padding: 0 10px;">
+  </ion-searchbar>
+
+
+  <app-explore-container name="ss"></app-explore-container>
+  
+  <ion-card *ngFor="let article of articles">
+    <ion-card-header>
+      <ion-card-title>{{ article.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{ article.content }}
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
