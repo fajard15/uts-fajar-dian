@@ -12,8 +12,8 @@ export class Tab1Page {
   constructor() {
     for (let i = 1; i <= 100; i++) {
       this.articles.push({
-        title: `Article #${i}`,
-        content: `This is the content for article number ${i}.`
+        title: `Travel to Germany #${i}`,
+        content: `Beautiful Scenery ${i}.`
       });
     }
   }
